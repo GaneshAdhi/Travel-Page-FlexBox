@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    margin: 0px;
+}
+
+.main-container {
+    padding: 10px;
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/travel-sm-bg.png");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    width: 88%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.description {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 90%;
+}
+
+.btn-style-one {
+    height: 50px;
+    border-radius: 19px;
+    font-size: 18px;
+    font-weight: bold;
+    border-width: 0px;
+    margin-top: 20px;
+    color: #183b56;
+    font-family: Open Sans;
+}
+
+.btn-style-two {
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    margin-top: 25px;
+}
+
+@media screen and (min-width:768px) {
+    .main-container {
+        background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/travel-md-bg.png");
+    }
+
+    .btn-container {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .btn-style-one {
+        margin-right: 25px;
+        width: 195px;
+    }
+
+    .heading {
+        font-size: 40px;
+        width: 88%;
+        text-align: center;
+    }
+}
